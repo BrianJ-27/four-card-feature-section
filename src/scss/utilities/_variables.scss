@@ -1,0 +1,36 @@
+// **************************************
+// GLOBAL VARIABLES
+// **************************************
+
+//layout
+$max-width: 100%;
+$gutter: 15px;
+$header-height: 600px;
+$footer-height: 150px;
+
+//Font Stacks
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+$font-stack-main: "Poppins", sans-serif;
+$font-stack-secondary: "Arial", sans-serif;
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$base-font-size: 15px;
+
+//border radius
+$soft-curve: 5px;
+$moderate-curve: 15px;
+$hard-curve: 25px;
+$full-circle: 50%;
+
+//Breakpoint Sizes
+$mobile-view: 351px;
+$tablet-view: 768px;
+$desktop-view: 1024px;
+
+// Media Query Breakpoint Map
+$breakpoints: (
+  "sm": $mobile-view,
+  "md": $tablet-view,
+  "lg": $desktop-view,
+);

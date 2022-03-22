@@ -1,0 +1,30 @@
+// **************************************
+// CARD STYLES
+// **************************************
+@use "../utilities" as *;
+
+.card {
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  margin: 1rem 0;
+  padding: 2rem;
+  width: min(100%, 350px);
+  max-height: 300px;
+  border-radius: $soft-curve;
+  &:nth-of-type(1) {
+    border-top: 4px solid $cyan;
+  }
+  &:nth-of-type(2) {
+    border-top: 4px solid $red;
+  }
+  &:nth-of-type(3) {
+    border-top: 4px solid $orange;
+  }
+  &:nth-of-type(4) {
+    border-top: 4px solid $blue;
+  }
+  @include mq("md") {
+    margin: 0rem 0rem;
+  }
+}

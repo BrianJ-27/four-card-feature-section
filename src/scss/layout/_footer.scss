@@ -1,0 +1,9 @@
+// **************************************
+// FOOTER STYLES
+// **************************************
+@use "../utilities" as *;
+
+.footer {
+  @extend %ctr-txt;
+  margin-top: 2rem;
+}

@@ -1,0 +1,59 @@
+// **************************************
+// TYPOGRAPHY STYLES
+// **************************************
+@use "../utilities" as *;
+
+//h1 styles
+.title__primary {
+  @extend %text-modules;
+  @extend %ctr-txt;
+  @include text-prop(
+    $size: clamp(1.13rem, 6vw, 1.9rem),
+    $f-weight: $font-weight-light,
+    $color: $color-text-base
+  );
+  font-weight: $font-weight-light;
+  color: $color-text-base;
+  padding-top: px-to-rems(75px);
+}
+
+//h2 styles
+.title__secondary {
+  margin-top: px-to-rems(-6px);
+  @extend %text-modules;
+  @extend %ctr-txt;
+  @include text-prop(
+    $size: clamp(1.17rem, 6vw, 1.95rem),
+    $f-weight: $font-weight-bold,
+    $color: $color-accent
+  );
+}
+//h3 styles
+.title__terciary {
+  @include text-prop(
+    $size: clamp(0.8rem, 3vw, 1.2rem),
+    $f-weight: $font-weight-bold,
+    $color: $color-accent
+  );
+  @extend %text-modules;
+}
+/*----CONTENT STYLES----*/
+
+// default p styles
+.content {
+  @include text-prop(
+    $size: clamp(0.5rem, 3vw, 0.8rem),
+    $f-weight: $font-weight-normal,
+    $color: $color-text-light
+  );
+  &__subtext {
+    @include text-prop(clamp(0.4rem, 3.5vw, 0.8rem));
+    @extend .content;
+    @extend %ctr-txt;
+    padding-top: px-to-rems(10px);
+  }
+  &__footer {
+    @include text-prop($size: 14px, $color: $color-text-dark);
+    font-style: italic;
+  }
+}

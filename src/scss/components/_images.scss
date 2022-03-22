@@ -1,0 +1,11 @@
+// **************************************
+// IMAGE STYLES
+// **************************************
+@use "../utilities" as *;
+
+.img {
+  @extend %img-properties;
+  max-width: 60px;
+  align-self: flex-end;
+  padding-top: px-to-rems(25px);
+}

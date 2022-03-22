@@ -1,0 +1,19 @@
+// **************************************
+// CONTAINER STYLES
+// **************************************
+@use "../utilities" as *;
+
+/*------BASE LAYOUT STYLES-----------*/
+.container {
+  width: max(60%, 85%);
+  margin: 0 auto;
+  & > header {
+    margin: 0 auto;
+    @include mq("md") {
+      width: 65%;
+    }
+    @include mq("lg") {
+      max-width: 500px;
+    }
+  }
+}

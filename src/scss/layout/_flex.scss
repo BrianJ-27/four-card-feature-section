@@ -1,0 +1,10 @@
+// **************************************
+// FLEXBOX STYLES
+// **************************************
+@use "../utilities" as *;
+
+/*------FLEXBOX LAYOUT STYLES-----------*/
+
+.flex__container {
+  @include flex_me($dir: column, $wrap: wrap);
+}

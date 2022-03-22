@@ -1,0 +1,32 @@
+// **************************************
+// GRID STYLES
+// **************************************
+@use "../utilities" as *;
+
+/*------GRID LAYOUT STYLES-----------*/
+
+//Main Content Grid Layout
+.main__grid--container {
+  @include grid_layout_container();
+  margin-top: px-to-rems(40px);
+  @include mq("md") {
+    margin-top: px-to-rems(55px);
+  }
+}
+
+// Grid Area Items
+.supervisor {
+  grid-area: supervisor;
+}
+
+.team-builder {
+  grid-area: team-builder;
+}
+
+.karma {
+  grid-area: karma;
+}
+
+.calculator {
+  grid-area: calculator;
+}
